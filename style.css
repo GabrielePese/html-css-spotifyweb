@@ -1,0 +1,154 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+main{
+  height: calc(100% - 90px);
+}
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+  height: 50px;
+  width: 50px;
+}
+
+.blocco{
+  border: 1px black solid;
+
+}
+
+.menu-sx{
+  float:left;
+  width: 230px;
+  height: calc(100vh - 90px);
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  border: 1px white solid;
+  height: 15%;
+}
+
+.tasto-menu-dx{
+  border: 1px green solid;
+  height: 5%;
+}
+.playlist{
+  height: 40%;
+}
+.crea-pl{
+  border: 1px pink solid;
+  height: 25%
+}
+
+.nuova-pl{
+  border: 1px green solid;
+  height: 15%
+}
+
+.installa{
+  margin-top: 50px;
+  border-bottom: 1px grey solid;
+  height: 5%;
+}
+
+.profilo{
+  border: 1px white solid;
+  height: 10%
+}
+
+.pagina{
+  float:left;
+  width: calc(100% - 230px);
+  height: calc(100vh - 90px);
+  background-color: grey;
+}
+.upgrade{
+  height:50px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.sez-principale{
+margin: 0 1%;
+}
+
+.nav{
+  border: 1px solid white;
+  height: 50px;
+  display:flex;
+  justify-content: center;
+
+}
+.nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav li{
+  margin-left: 10px;
+}
+
+
+.cont-alb{
+  display: flex;
+  justify-content: space-between;
+}
+.album{
+  border: 1px solid white;
+  height: 120px;
+  width: 15%;
+  margin-right: 5px;
+}
+
+.cont-creato{
+  display: flex;
+  justify-content: flex-start;
+}
+/*
+@media all and (max-width: 800px) {
+  .nav{
+    flex-wrap: wrap;
+} */
+
+footer{
+  height:90px;
+  width: 100vw;
+  background-color: red;
+  bottom: 0;
+  left:0;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.brano{
+  width: 20%;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+.barra-player{
+  width: 60%;
+  height: 100%;
+  border: 1px solid blue;
+
+}
+
+.volume{
+  width: 20%;
+  height: 100%;
+  border: 1px solid blue;
+}

@@ -15,55 +15,109 @@ main::after{
 }
 img{
   height: 50px;
-  width: 50px;
 }
 
-.blocco{
-  border: 1px black solid;
-
-}
 
 .menu-sx{
   float:left;
   width: 230px;
   height: calc(100vh - 90px);
   background-color: black;
-  color: white;
+  color: #a3a3a3;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .logo{
-  border: 1px white solid;
-  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 10px;
 }
 
-.tasto-menu-dx{
-  border: 1px green solid;
-  height: 5%;
+.logo img{
+  height: 40px;
+  width: 70%;
+
 }
+.tasto-menu-dx{
+  margin-top: 1px;
+  height: 5%;
+  display: flex;
+  align-items: center;
+}
+.tasto-menu-dx img{
+  height: 25px;
+  color: #a3a3a3;
+}
+
 .playlist{
   height: 40%;
-}
-.crea-pl{
-  border: 1px pink solid;
-  height: 25%
+  color:white;
+  padding-top: 10px;
+
 }
 
-.nuova-pl{
-  border: 1px green solid;
-  height: 15%
+.playlist a{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #a3a3a3;
+
 }
+.playlist .nuova-pl{
+  height: 15%;
+  color: #a3a3a3;
+}
+
+.tasto-piu{
+  background-color: grey;
+  color: black;
+  height: 80%;
+  width: 15%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
 
 .installa{
   margin-top: 50px;
-  border-bottom: 1px grey solid;
-  height: 5%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: #a3a3a3;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #a3a3a3;
+
+}
+.installa img{
+  height: 20px;
+  padding-right: 10px;
+
 }
 
 .profilo{
-  border: 1px white solid;
-  height: 10%
+  height: 30px;;
+  display: flex;
+  align-items: center;
+}
+.profilo img{
+  border-radius: 50%;
+  background-color:#a3a3a3;
+  height:  90%;
+  margin-right: 5px;
 }
 
 .pagina{
@@ -117,9 +171,9 @@ margin: 0 1%;
   display: flex;
   justify-content: flex-start;
 }
-/*
-@media all and (max-width: 800px) {
-  .nav{
+
+/* @media all and (max-width: 800px) {
+  .sez-principale{
     flex-wrap: wrap;
 } */
 

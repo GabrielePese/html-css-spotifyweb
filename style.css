@@ -208,11 +208,26 @@ img{
 
 
 .album{
+  position: relative;
   width: 175px;
   margin-right: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+.hov-ok .fa-play-circle{
+  display: none;
+  color:white;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  font-size: 30px;
+}
+
+.hov-ok:hover .fa-play-circle{
+  display: block;
 }
 
 

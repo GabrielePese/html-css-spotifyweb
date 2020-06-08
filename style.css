@@ -215,6 +215,7 @@ img{
   align-items: center;
 }
 .hov-ok{
+  display: flex;
   position: relative;
 }
 
@@ -235,7 +236,9 @@ img{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  height: 100%;
+  width: 100%;
+
 }
 
 .hov-ok:hover .hov2{

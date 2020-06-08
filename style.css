@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 
 main{
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
 }
 main::after{
   content: "";
@@ -17,7 +17,7 @@ img{
   height: 50px;
 }
 
-
+ /* MENU SX */
 .menu-sx{
   float:left;
   width: 230px;
@@ -28,6 +28,7 @@ img{
   flex-direction: column;
   justify-content: space-between;
   padding: 0 10px;
+
 }
 
 .logo{
@@ -120,30 +121,53 @@ img{
   margin-right: 5px;
 }
 
+/* BLOCCO A DX */
 .pagina{
   float:left;
   width: calc(100% - 230px);
   height: calc(100vh - 90px);
-  background-color: grey;
+  background-color: #141922;
+  margin-bottom:90px;
 }
+
+/* STRISCIA ALTA UPGRADE */
+
 .upgrade{
-  height:50px;
-  background-color: black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 5px;
+  background-color: #080b12;
+  height: 50px;
 }
-
-.sez-principale{
-margin: 0 1%;
-}
-
-.nav{
+.upgrade a{
+  display: flex;
+  width: 20%;
+  background-color: #080b12;
+  justify-content: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 10px;
   border: 1px solid white;
+  color:white;
+  font-size: 12px;
+
+}
+
+/* SEZIONE PRINCIPALE ALBUM */
+.sez-principale{
+  padding: 0 10px;
+}
+
+/* BARRA MENU */
+.nav{
   height: 50px;
   display:flex;
   justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
 }
 .nav ul{
@@ -153,20 +177,55 @@ margin: 0 1%;
 
 .nav li{
   margin-left: 10px;
+
 }
 
+.nav a{
+  color:#7a7d81;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/* PLAYED */
 
 .cont-alb{
   display: flex;
   justify-content: space-between;
 }
+
 .album{
-  border: 1px solid white;
-  height: 120px;
   width: 15%;
   margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.played img{
+  width: 100%;
+  height: auto;
+}
+.played h2{
+  color:white;
+  margin-bottom: 10px;
+}
+.played h4{
+  color:white;
+  margin-top: 10px;
+}
+.played h6{
+  color:#7a7d81;
+  margin-top: 5px;
+}
+
+.creato-per{
+  margin-top: 20px;
+}
+.creato-per h5{
+  color:#7a7d81;
+  margin-bottom: 10px;
+}
 .cont-creato{
   display: flex;
   justify-content: flex-start;
@@ -177,32 +236,53 @@ margin: 0 1%;
     flex-wrap: wrap;
 } */
 
+
+/* FOOTER */
 footer{
   height:90px;
   width: 100vw;
-  background-color: red;
+  background-color: #282828;
   bottom: 0;
   left:0;
   display: flex;
   justify-content: space-around;
+  z-index: 999;
+  position: fixed;
 
 }
 
 .brano{
-  width: 20%;
+  width: 15%;
   height: 100%;
-  border: 1px solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.brano img{
+  height: 40px;
+  width: auto;
+}
+.brano .h{
+  margin-right: 30px;
+}
+.brano h4{
+  color:white;
+}
+.brano h6{
+  color:#7a7d81;
+}
+
+.brano .far{
+  color: #7a7d81;
+}
 .barra-player{
   width: 60%;
   height: 100%;
-  border: 1px solid blue;
 
 }
 
 .volume{
   width: 20%;
   height: 100%;
-  border: 1px solid blue;
 }

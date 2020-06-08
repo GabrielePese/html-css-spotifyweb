@@ -208,26 +208,42 @@ img{
 
 
 .album{
-  position: relative;
   width: 175px;
   margin-right: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.hov-ok{
+  position: relative;
+}
 
 .hov-ok .fa-play-circle{
   display: none;
   color:white;
   position: absolute;
-  top: 70px;
-  left: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 30px;
 }
 
+.hov2{
+  background-color: rgba(4, 4, 4, 0.8);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.hov-ok:hover .hov2{
+  display: block;
+}
 .hov-ok:hover .fa-play-circle{
   display: block;
+
 }
 
 

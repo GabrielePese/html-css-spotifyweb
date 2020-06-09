@@ -28,6 +28,10 @@ img{
   padding: 0 10px;
 }
 
+.menu-sx h4:hover{
+  color:white;
+}
+
 .logo{
   display: flex;
   justify-content: flex-start;
@@ -63,6 +67,14 @@ img{
 
 }
 
+.playlist .per-hov:hover .playlist a{
+  color:white;
+}
+
+.playlist .per-hov:hover .tasto-piu{
+  background-color: white;
+
+}
 .playlist a{
   display: flex;
   align-items: center;
@@ -76,6 +88,10 @@ img{
 .playlist .nuova-pl{
   height: 15%;
   color: #a3a3a3;
+}
+
+.playlist .nuova-pl:hover{
+  color:white;
 }
 
 .tasto-piu{
@@ -114,6 +130,10 @@ img{
 
 }
 
+.installa h4:hover{
+  color:white;
+}
+
 .profilo{
   height: 30px;;
   display: flex;
@@ -150,9 +170,10 @@ img{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 5px;
+  padding-right: 20px;
   background-color: #080b12;
   height: 50px;
+  width: auto;
 }
 .upgrade a{
   display: flex;
@@ -166,6 +187,10 @@ img{
   color:white;
   font-size: 12px;
 
+}
+
+.upgrade a:hover{
+  transform: scale(1.1);
 }
 
 
@@ -197,13 +222,17 @@ img{
   font-family: sans-serif;
 }
 
+.nav a:hover {
+  color:white;
+}
+
 
 
 /* PLAYED */
 
 .cont-alb{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
@@ -319,10 +348,21 @@ footer{
 }
 .brano h6{
   color:#7a7d81;
+
+}
+
+.brano h6:hover{
+  text-decoration: underline;
+  color:white;
+
 }
 
 .brano .far{
   color: #7a7d81;
+}
+
+.brano .far:hover{
+  color: white;
 }
 .barra-player{
   width: calc(100vw - 230px - 230px);
@@ -331,6 +371,10 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.barra-player .fa-play-circle:hover {
+  transform: scale(1.2);
 }
 .p-sopra , .p-sotto{
   height: 30px;
@@ -353,8 +397,16 @@ footer{
   border: 2px #7a7d81 solid;
   border-radius: 2px;
 
-
 }
+
+.p-sotto .br-piena:hover{
+  height: 2px;
+  width: 10%;
+  color: white;
+  border: 2px #9be44d solid;
+  border-radius: 2px;
+}
+
 
 .p-sotto h6{
   margin: 0 20px;
@@ -388,6 +440,9 @@ footer{
   border: 2px #7a7d81 solid;
   border-radius: 2px;
 
+}
+.volume .br-piena:hover{
+    border: 2px #9be44d solid
 }
 
 .volume .br-vuota{

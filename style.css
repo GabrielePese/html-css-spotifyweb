@@ -67,14 +67,7 @@ img{
 
 }
 
-.playlist .per-hov:hover .playlist a{
-  color:white;
-}
 
-.playlist .per-hov:hover .tasto-piu{
-  background-color: white;
-
-}
 .playlist a{
   display: flex;
   align-items: center;
@@ -107,6 +100,15 @@ img{
   margin-right: 10px;
 }
 
+.playlist .per-hov:hover .playlist a{
+  color:white;
+}
+
+.playlist .per-hov:hover .tasto-piu{
+  background-color: white;
+
+}
+
 
 .ins-prof{
   position: absolute;
@@ -119,6 +121,7 @@ img{
   padding-bottom: 10px;
   color: #a3a3a3;
   height: 10%;
+  width: 200px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #a3a3a3;
@@ -138,6 +141,7 @@ img{
   height: 30px;;
   display: flex;
   align-items: center;
+  margin-top:10px;
 }
 .profilo img{
   border-radius: 50%;
@@ -238,7 +242,7 @@ img{
 
 .album{
   width: 175px;
-  margin-right: 5px;
+  margin-right:5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,6 +317,34 @@ img{
   margin-top: 10px;
 }
 
+
+.artisti{
+  margin-top:20px;
+}
+.artisti h5{
+  color:#7a7d81;
+  margin-bottom: 15px;
+}
+
+.hov3{
+  background-color: rgba(4, 4, 4, 0.8);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+ .artisti .hov-ok:hover .hov3{
+  display: block;
+}
+.artisti img{
+  border-radius: 50%;
+}
 
 footer{
   height:90px;
